@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-u5tf
+  namespace: nickboldt-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:a9afc7461db881d5704856b1dd7e9e36280a27faaf93e2b22b80b2df1d72ff4a
+        name: my-java-quarkus
+        resources: {}
+status: {}
